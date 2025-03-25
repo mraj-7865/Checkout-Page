@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="main">
+      <h1 class="brand">Cafe Coffee Day</h1>
+    </nav>
+    <div class="page">
+      <section class="order box">
+        <h2 class="box-title">Your Order Summury</h2>
+
+        <ul class="items">
+          <li class="item">
+            <div class="item-quantitiy">1x</div>
+            <div class="item-title">cappuccino</div>
+            <div class="item-price">$ 3.99</div>
+            <ul class="item-option-list">
+              <li class="item-option">light foam</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <div class="item-quantitiy">1x</div>
+            <div class="item-title">cappuccino</div>
+            <div class="item-price">$ 3.99</div>
+            <ul class="item-option-list">
+              <li class="item-option">light foam</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <div class="item-quantitiy">1x</div>
+            <div class="item-title">cappuccino</div>
+            <div class="item-price">$ 3.99</div>
+            <ul class="item-option-list">
+              <li class="item-option">light foam</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="add-item">
+          <button class="add-item-button">add more items</button>
+        </div>
+      </section>
+
+      <section class="payment">
+        <div class="name-box box">
+          <h2 class="box-title">Customer Info</h2>
+
+          <div class="input-group">
+            <label class="user-input-lable" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+        </div>
+        <div class="cc-box box">
+          <h2 class="box-title">Payment Details</h2>
+
+          <div class="input-group">
+            <label class="user-input-lable" for="name">Credit Card Number</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+             class="user-input-lable" placeholder="Enter Your Credit Card Number"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="total">
+<table class="total-table">
+<tbody>
+      <tr>
+            <td>Subtotal:</td>
+            <td>$19</td>
+      </tr>
+
+      <tr>
+            <td>Tax</td>
+            <td>$12</td>
+      </tr>
+      <tr class="final-total">
+            <td>Total:</td>
+            <td>$20.5</td>
+      </tr>
+</tbody>
+</table>
+<button class="checkout"> Checkout</button>
+      </section>
+    </div>
+  </body>
+</html>
