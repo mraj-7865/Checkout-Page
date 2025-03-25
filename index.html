@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav id="main">
+    <nav id="main-nav">
       <h1 class="brand">Cafe Coffee Day</h1>
     </nav>
     <div class="page">
@@ -17,34 +17,35 @@
         <ul class="items">
           <li class="item">
             <div class="item-quantitiy">1x</div>
-            <div class="item-title">cappuccino</div>
+            <div class="item-title">
+                  Cappuccino</div>
             <div class="item-price">$ 3.99</div>
             <ul class="item-option-list">
-              <li class="item-option">light foam</li>
+              <li class="item-option">Light Foam</li>
             </ul>
           </li>
 
           <li class="item">
             <div class="item-quantitiy">1x</div>
-            <div class="item-title">cappuccino</div>
+            <div class="item-title">Latte</div>
             <div class="item-price">$ 3.99</div>
             <ul class="item-option-list">
-              <li class="item-option">light foam</li>
+              <li class="item-option">Almonds Milk</li>
             </ul>
           </li>
 
           <li class="item">
             <div class="item-quantitiy">1x</div>
-            <div class="item-title">cappuccino</div>
+            <div class="item-title">Crolssant</div>
             <div class="item-price">$ 3.99</div>
             <ul class="item-option-list">
-              <li class="item-option">light foam</li>
+              <li class="item-option">Butter</li>
             </ul>
           </li>
         </ul>
 
         <div class="add-item">
-          <button class="add-item-button">add more items</button>
+          <button class="add-item-btn">add more items</button>
         </div>
       </section>
 
@@ -57,7 +58,7 @@
             <input
               type="text"
               id="name"
-              name="name"
+              name="name" class="user-input"
               placeholder="Enter Your Name"
             />
           </div>
@@ -66,36 +67,52 @@
           <h2 class="box-title">Payment Details</h2>
 
           <div class="input-group">
-            <label class="user-input-lable" for="name">Credit Card Number</label>
+            <label class="user-input-lable" for="name"
+              >Credit Card Number</label
+            >
             <input
               type="text"
               id="name"
               name="name"
-             class="user-input-lable" placeholder="Enter Your Credit Card Number"
+              class="user-input"
+              placeholder="Enter Your Credit Card Number"
+            />
+          </div>
+
+          <div class="input-group">
+            <label class="user-input-lable" for="name"
+              >CVV</label
+            >
+            <input
+              type="text"
+              id="CVV"
+              name="CVV"
+              class="user-input short-input"
+              placeholder="CVV Here"
             />
           </div>
         </div>
       </section>
 
       <section class="total">
-<table class="total-table">
-<tbody>
-      <tr>
-            <td>Subtotal:</td>
-            <td>$19</td>
-      </tr>
+        <table class="totals-table">
+          <tbody>
+            <tr>
+              <td>Subtotal:</td>
+              <td>$19</td>
+            </tr>
 
-      <tr>
-            <td>Tax</td>
-            <td>$12</td>
-      </tr>
-      <tr class="final-total">
-            <td>Total:</td>
-            <td>$20.5</td>
-      </tr>
-</tbody>
-</table>
-<button class="checkout"> Checkout</button>
+            <tr>
+              <td>Tax</td>
+              <td>$12</td>
+            </tr>
+            <tr class="final-total">
+              <td>Total:</td>
+              <td>$20.5</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="Checkout">Place Order</button>
       </section>
     </div>
   </body>
